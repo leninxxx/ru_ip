@@ -15,9 +15,11 @@
 
 import ipaddress
 import os
+import re
 import sys
 import tempfile
 import urllib.request
+from datetime import datetime, timezone
 
 DELEGATED_URL = "https://ftp.ripe.net/pub/stats/ripencc/delegated-ripencc-latest"
 TIMEOUT_SECONDS = 60
@@ -92,10 +94,34 @@ def main():
 
     out_timeout = os.path.join(OUT_DIR, "ru_ranges_timeout.rsc")
     out_perm = os.path.join(OUT_DIR, "ru_ranges.rsc")
+    out_stats = os.path.join(OUT_DIR, "ru_ranges_stats.txt")
+
+    # diff против предыдущей версии (до перезаписи файлов!)
+    prev = set()
+    if os.path.exists(out_perm):
+        with open(out_perm, encoding="utf-8") as f:
+            for line in f:
+                m = re.search(r"address=([\d./]+)", line)
+                if m:
+                    prev.add(m.group(1))
+    current = {str(n) for n in collapsed}
+    added = current - prev
+    removed = prev - current
+    if prev:
+        print(f"Изменения: +{len(added)} / -{len(removed)}")
+    else:
+        print("Предыдущая версия не найдена — первая сборка")
+
     write_rsc(collapsed, out_timeout, ENTRY_TIMEOUT)
     write_rsc(collapsed, out_perm, None)
 
-    for p in (out_timeout, out_perm):
+    # компактный файл статистики: роутер скачает его и напишет в лог
+    fd, tmp = tempfile.mkstemp(dir=OUT_DIR, suffix=".tmp")
+    with os.fdopen(fd, "w", encoding="utf-8", newline="\n") as f:
+        f.write(f"date={datetime.now(timezone.utc):%Y-%m-%d} total={len(current)} added={len(added)} removed={len(removed)}\n")
+    os.replace(tmp, out_stats)
+
+    for p in (out_timeout, out_perm, out_stats):
         print(f"Готово: {p} ({os.path.getsize(p) / 1024:.0f} КБ)")
 
 
