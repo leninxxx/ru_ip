@@ -4542,6 +4542,7 @@
 /ip firewall address-list add list=RU address=152.89.132.0/22 comment=RIPE-RU
 /ip firewall address-list add list=RU address=152.89.196.0/24 comment=RIPE-RU
 /ip firewall address-list add list=RU address=152.89.216.0/22 comment=RIPE-RU
+/ip firewall address-list add list=RU address=152.228.112.0/20 comment=RIPE-RU
 /ip firewall address-list add list=RU address=153.51.32.0/19 comment=RIPE-RU
 /ip firewall address-list add list=RU address=153.51.64.0/18 comment=RIPE-RU
 /ip firewall address-list add list=RU address=153.51.160.0/19 comment=RIPE-RU
