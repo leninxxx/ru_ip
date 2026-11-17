@@ -4362,6 +4362,7 @@
 /ip firewall address-list add list=RU address=109.252.0.0/16 comment=RIPE-RU
 /ip firewall address-list add list=RU address=109.254.0.0/16 comment=RIPE-RU
 /ip firewall address-list add list=RU address=111.88.78.0/24 comment=RIPE-RU
+/ip firewall address-list add list=RU address=111.88.80.0/21 comment=RIPE-RU
 /ip firewall address-list add list=RU address=111.88.96.0/19 comment=RIPE-RU
 /ip firewall address-list add list=RU address=111.88.128.0/21 comment=RIPE-RU
 /ip firewall address-list add list=RU address=111.88.144.0/20 comment=RIPE-RU
@@ -5787,6 +5788,7 @@
 /ip firewall address-list add list=RU address=185.117.156.0/22 comment=RIPE-RU
 /ip firewall address-list add list=RU address=185.117.232.0/22 comment=RIPE-RU
 /ip firewall address-list add list=RU address=185.117.244.0/22 comment=RIPE-RU
+/ip firewall address-list add list=RU address=185.118.62.0/24 comment=RIPE-RU
 /ip firewall address-list add list=RU address=185.118.64.0/22 comment=RIPE-RU
 /ip firewall address-list add list=RU address=185.118.126.0/24 comment=RIPE-RU
 /ip firewall address-list add list=RU address=185.118.164.0/22 comment=RIPE-RU
@@ -7612,6 +7614,7 @@
 /ip firewall address-list add list=RU address=194.165.50.0/24 comment=RIPE-RU
 /ip firewall address-list add list=RU address=194.165.57.0/24 comment=RIPE-RU
 /ip firewall address-list add list=RU address=194.165.61.0/24 comment=RIPE-RU
+/ip firewall address-list add list=RU address=194.169.50.0/24 comment=RIPE-RU
 /ip firewall address-list add list=RU address=194.169.56.0/22 comment=RIPE-RU
 /ip firewall address-list add list=RU address=194.169.192.0/24 comment=RIPE-RU
 /ip firewall address-list add list=RU address=194.169.247.0/24 comment=RIPE-RU
