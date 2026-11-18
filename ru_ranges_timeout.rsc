@@ -3516,7 +3516,6 @@
 /ip firewall address-list add list=RU address=91.240.222.0/24 comment=RIPE-RU timeout=2592000
 /ip firewall address-list add list=RU address=91.240.225.0/24 comment=RIPE-RU timeout=2592000
 /ip firewall address-list add list=RU address=91.240.242.0/23 comment=RIPE-RU timeout=2592000
-/ip firewall address-list add list=RU address=91.241.4.0/24 comment=RIPE-RU timeout=2592000
 /ip firewall address-list add list=RU address=91.241.12.0/23 comment=RIPE-RU timeout=2592000
 /ip firewall address-list add list=RU address=91.241.16.0/22 comment=RIPE-RU timeout=2592000
 /ip firewall address-list add list=RU address=91.241.22.0/24 comment=RIPE-RU timeout=2592000
@@ -4632,7 +4631,6 @@
 /ip firewall address-list add list=RU address=171.22.72.0/22 comment=RIPE-RU timeout=2592000
 /ip firewall address-list add list=RU address=171.22.180.0/22 comment=RIPE-RU timeout=2592000
 /ip firewall address-list add list=RU address=171.22.212.0/22 comment=RIPE-RU timeout=2592000
-/ip firewall address-list add list=RU address=171.22.236.0/22 comment=RIPE-RU timeout=2592000
 /ip firewall address-list add list=RU address=171.22.242.0/24 comment=RIPE-RU timeout=2592000
 /ip firewall address-list add list=RU address=171.25.164.0/22 comment=RIPE-RU timeout=2592000
 /ip firewall address-list add list=RU address=171.25.172.0/22 comment=RIPE-RU timeout=2592000
@@ -4840,7 +4838,10 @@
 /ip firewall address-list add list=RU address=176.121.60.0/22 comment=RIPE-RU timeout=2592000
 /ip firewall address-list add list=RU address=176.121.128.0/18 comment=RIPE-RU timeout=2592000
 /ip firewall address-list add list=RU address=176.121.192.0/19 comment=RIPE-RU timeout=2592000
-/ip firewall address-list add list=RU address=176.122.16.0/20 comment=RIPE-RU timeout=2592000
+/ip firewall address-list add list=RU address=176.122.16.0/23 comment=RIPE-RU timeout=2592000
+/ip firewall address-list add list=RU address=176.122.19.0/24 comment=RIPE-RU timeout=2592000
+/ip firewall address-list add list=RU address=176.122.20.0/22 comment=RIPE-RU timeout=2592000
+/ip firewall address-list add list=RU address=176.122.24.0/21 comment=RIPE-RU timeout=2592000
 /ip firewall address-list add list=RU address=176.122.48.0/20 comment=RIPE-RU timeout=2592000
 /ip firewall address-list add list=RU address=176.122.64.0/20 comment=RIPE-RU timeout=2592000
 /ip firewall address-list add list=RU address=176.122.200.0/21 comment=RIPE-RU timeout=2592000
@@ -6473,6 +6474,7 @@
 /ip firewall address-list add list=RU address=188.75.0.0/18 comment=RIPE-RU timeout=2592000
 /ip firewall address-list add list=RU address=188.75.192.0/18 comment=RIPE-RU timeout=2592000
 /ip firewall address-list add list=RU address=188.92.24.0/24 comment=RIPE-RU timeout=2592000
+/ip firewall address-list add list=RU address=188.92.28.0/24 comment=RIPE-RU timeout=2592000
 /ip firewall address-list add list=RU address=188.92.104.0/21 comment=RIPE-RU timeout=2592000
 /ip firewall address-list add list=RU address=188.92.176.0/21 comment=RIPE-RU timeout=2592000
 /ip firewall address-list add list=RU address=188.92.192.0/21 comment=RIPE-RU timeout=2592000
